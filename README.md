@@ -1,6 +1,6 @@
 # Binance Futures Trading Bot
 
-A command-line Python application that places **BUY** and **SELL** **Market** and **Limit** orders on the **Binance Futures Testnet/Demo Trading** environment.
+A Python CLI application for placing Binance Futures Testnet MARKET, LIMIT, and bonus STOP_LIMIT orders.
 
 ---
 
@@ -8,8 +8,10 @@ A command-line Python application that places **BUY** and **SELL** **Market** an
 
 - Place MARKET Orders
 - Place LIMIT Orders
-- BUY and SELL support
+- Place STOP_LIMIT Orders
+- BUY / SELL Support
 - Command Line Interface (CLI)
+- Order Confirmation Prompt
 - Input Validation
 - Logging
 - Exception Handling
@@ -20,38 +22,32 @@ A command-line Python application that places **BUY** and **SELL** **Market** an
 
 ```text
 binance-futures-trading-bot/
-│
-├── bot/
-│   ├── client.py
-│   ├── cli.py
-│   ├── orders.py
-│   ├── validators.py
-│   └── logging_config.py
-│
-├── logs/
-│   └── trading.log
-│
-├── .env
-├── .gitignore
-├── main.py
-├── README.md
-└── requirements.txt
+|
+|-- bot/
+|   |-- __init__.py
+|   |-- client.py
+|   |-- cli.py
+|   |-- orders.py
+|   |-- validators.py
+|   |-- logging_config.py
+|
+|-- logs/
+|   |-- trading.log
+|
+|-- .env
+|-- .gitignore
+|-- README.md
+|-- requirements.txt
+|-- main.py
 ```
 
 ---
 
 ## Installation
 
-Clone the repository.
-
 ```bash
 git clone https://github.com/raagasree-g/binance-futures-trading-bot.git
 cd binance-futures-trading-bot
-```
-
-Install the required dependencies.
-
-```bash
 pip install -r requirements.txt
 ```
 
@@ -70,45 +66,57 @@ API_SECRET=your_api_secret
 
 ## Usage
 
-### Place a MARKET Order
+### Market Order
 
 ```bash
 python main.py --symbol BTCUSDT --side BUY --type MARKET --quantity 0.001
 ```
 
-### Place a LIMIT Order
+### Limit Order
 
 ```bash
 python main.py --symbol BTCUSDT --side SELL --type LIMIT --quantity 0.001 --price 110000
 ```
 
+### Stop-Limit Order
+
+```bash
+python main.py --symbol BTCUSDT --side SELL --type STOP_LIMIT --quantity 0.001 --price 109500 --stop-price 110000
+```
+
+A confirmation prompt is displayed before any order is submitted.
+
 ---
 
 ## Validation
 
-The application validates the following inputs:
+The application validates:
 
 - BUY / SELL order side
-- MARKET / LIMIT order type
-- Quantity must be greater than 0
-- LIMIT orders require a valid price
+- MARKET / LIMIT / STOP_LIMIT order type
+- Quantity greater than 0
+- LIMIT price required
+- STOP_LIMIT price required
+- STOP_LIMIT stop price required
 
 ---
 
 ## Logging
 
-Application logs are stored in:
+Logs are written automatically to:
 
 ```text
 logs/trading.log
 ```
 
-The log file records:
+The log file stores:
 
-- Order requests
-- Order responses
-- Successful executions
-- Errors and exceptions
+- Order Requests
+- Order Responses
+- Successful Executions
+- Errors
+
+Before final submission, place one MARKET order and one LIMIT order on Binance Futures Testnet and confirm `logs/trading.log` contains both successful request/response records.
 
 ---
 
@@ -126,11 +134,11 @@ The log file records:
 ## Requirements
 
 - Python 3.10+
-- Binance Futures Testnet account
-- Binance Testnet API Key and Secret
+- python-binance
+- python-dotenv
 
 ---
 
 ## Author
 
-**Raaga Sree**
+Raaga Sree
