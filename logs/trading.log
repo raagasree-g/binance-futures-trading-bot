@@ -14,3 +14,9 @@
 2026-07-02 15:31:04 | INFO     | Limit Order Request | Symbol=BTCUSDT | Side=SELL | Quantity=0.001 | Price=110000.0
 2026-07-02 15:31:04 | INFO     | Limit Order placed successfully.
 2026-07-02 15:31:04 | INFO     | Order ID=18457002737 | Status=NEW | ExecutedQty=0.0000
+2026-07-02 15:50:39 | INFO     | Market Order Request | Symbol=BTCUSDT | Side=BUY | Quantity=0.001
+2026-07-02 15:50:40 | INFO     | Market Order placed successfully.
+2026-07-02 15:50:40 | INFO     | Order ID=18460380474 | Status=NEW | ExecutedQty=0.0000
+2026-07-02 15:50:53 | INFO     | Limit Order Request | Symbol=BTCUSDT | Side=SELL | Quantity=0.001 | Price=110000.0
+2026-07-02 15:50:53 | INFO     | Limit Order placed successfully.
+2026-07-02 15:50:53 | INFO     | Order ID=18460426300 | Status=NEW | ExecutedQty=0.0000
