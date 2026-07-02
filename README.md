@@ -116,8 +116,6 @@ The log file stores:
 - Successful Executions
 - Errors
 
-Before final submission, place one MARKET order and one LIMIT order on Binance Futures Testnet and confirm `logs/trading.log` contains both successful request/response records.
-
 ---
 
 ## Assumptions
