@@ -116,6 +116,8 @@ The log file stores:
 - Successful Executions
 - Errors
 
+`logs/trading.log` contains verified request/response records for one MARKET order and one LIMIT order, confirming successful execution on Testnet.
+
 ---
 
 ## Assumptions
