@@ -1,0 +1,16 @@
+2026-07-02 10:26:35,038 | INFO | Logger is working!
+2026-07-02 14:33:32,746 | INFO | Market Order Request | Symbol=BTCUSDT Side=BUY Qty=0.001
+2026-07-02 14:33:32,925 | INFO | Market Order Response: {'orderId': 18447062904, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJe81ce90ee98cfcefda846', 'price': '0.00', 'origQty': '0.0010', 'executedQty': '0.0000', 'cumQty': '0.0000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1782983012128}
+2026-07-02 15:13:40,385 | INFO | Market Order Request | Symbol=BTCUSDT Side=BUY Qty=0.001
+2026-07-02 15:13:40,556 | INFO | Market Order Response: {'orderId': 18454022005, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJac26a13728b788936032a', 'price': '0.00', 'origQty': '0.0010', 'executedQty': '0.0000', 'cumQty': '0.0000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1782985419768}
+2026-07-02 15:14:06,170 | INFO | Limit Order Request | Symbol=BTCUSDT Side=SELL Qty=0.001 Price=110000.0
+2026-07-02 15:14:06,566 | INFO | Limit Order Response: {'orderId': 18454084092, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJec22ebd871781578464888', 'price': '110000.00', 'origQty': '0.0010', 'executedQty': '0.0000', 'cumQty': '0.0000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1782985445739}
+2026-07-02 15:28:41 | INFO     | Market Order Request | Symbol=BTCUSDT | Side=BUY | Quantity=0.001
+2026-07-02 15:28:42 | INFO     | Market Order placed successfully.
+2026-07-02 15:28:42 | INFO     | Order ID=18456535188 | Status=NEW | ExecutedQty=0.0000
+2026-07-02 15:30:52 | INFO     | Market Order Request | Symbol=BTCUSDT | Side=BUY | Quantity=0.001
+2026-07-02 15:30:53 | INFO     | Market Order placed successfully.
+2026-07-02 15:30:53 | INFO     | Order ID=18456971069 | Status=NEW | ExecutedQty=0.0000
+2026-07-02 15:31:04 | INFO     | Limit Order Request | Symbol=BTCUSDT | Side=SELL | Quantity=0.001 | Price=110000.0
+2026-07-02 15:31:04 | INFO     | Limit Order placed successfully.
+2026-07-02 15:31:04 | INFO     | Order ID=18457002737 | Status=NEW | ExecutedQty=0.0000
